@@ -3,10 +3,12 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { CurrentTemperatureDisplayComponent } from './current-temperature-display/current-temperature-display.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CurrentTemperatureDisplayComponent
   ],
   imports: [
     BrowserModule,
