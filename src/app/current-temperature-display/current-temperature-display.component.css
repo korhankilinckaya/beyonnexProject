@@ -1,37 +1,50 @@
-.circle {
-    width: 100px;
-    height: 100px;
-    background-color: transparent;
-    border: 1px solid black;
-    border-radius: 50%;
-    position: relative;
-  }
-  
-  .line {
-    position: absolute;
-    background-color: black;
-  }
-  
-  .horizontal {
-    top: 50%;
-    left: 0;
-    right: 0;
-    height: 1px;
-    transform: translateY(-1px);
-  }
-  
-  .vertical {
-    width: 1px;
-    top: 0;
-    bottom: 0;
-  }
-  
-  .left {
-    left: 50%;
-    transform: translateX(-1px);
-  }
-  
-  .right {
-    right: 50%;
-    transform: translateX(1px);
-  }
+.heater {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; 
+  justify-content: center;
+}
+
+.heater-circle {
+  width: 100px;
+  height: 100px;
+  background-color: transparent;
+  border: 1px solid black; 
+  border-radius: 50%;
+  position: relative;
+}
+
+.leg {
+  width: 1px;
+  height: 15px;
+  background-color: black;
+  position: relative;
+}
+
+.leg-right {
+  left: 82px; 
+  top: -25px;
+}
+
+.leg-left {
+  right: -22px; 
+  top: -7px;
+}
+
+.temperature {
+  position: relative;
+  text-align: center;
+  right: -35px; 
+  top: -20px;
+}
+
+.radius {
+  width: 1px;
+  height: 100px;
+  background-color: black;
+  position: absolute;
+  top: 10px;
+  left: 58px;
+  clip-path: polygon(0 0, 0 50%, 100% 50%, 100% 100%, 0 100%); /*to show half of diameter*/ 
+}
+

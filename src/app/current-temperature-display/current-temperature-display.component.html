@@ -1,5 +1,7 @@
-<div class="circle">
-    <div class="line horizontal"></div>
-    <div class="line vertical left"></div>
-    <div class="line vertical right"></div>
-  </div>
+<div class="heater">
+  <div class="heater-circle"></div>
+  <div class="radius" [ngStyle]="{ 'transform': 'rotate(' + calculatedRadiusRotation() + 'deg)' }"></div>
+  <div class="leg leg-left" [ngStyle]="{ 'transform': 'rotate(' + leftLegRotation + 'deg)' }"></div>
+  <div class="leg leg-right" [ngStyle]="{ 'transform': 'rotate(' + rightLegRotation + 'deg)' }"></div>
+  <div class="temperature">{{target+' °C'}}</div>
+</div>
